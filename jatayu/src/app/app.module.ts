@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductEnggComponent } from './product-engg/product-engg.component';
+import { RisingFoxComponent } from './rising-fox/rising-fox.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductEnggComponent } from './product-engg/product-engg.component';
     HeaderComponent,
     FooterComponent,
     AboutUsComponent,
-    ProductEnggComponent
+    ProductEnggComponent,
+    RisingFoxComponent
   ],
   imports: [
     BrowserModule,

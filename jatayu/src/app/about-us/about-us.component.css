@@ -1,6 +1,6 @@
 hr {
-    border-top: 1px dashed black;
     width: 50%;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
  .fade-in {

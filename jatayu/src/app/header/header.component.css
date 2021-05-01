@@ -1,0 +1,15 @@
+.shadow {
+    box-shadow: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.1607843137254902));
+    height : 100px;
+}
+
+.style-nav-items {
+    font-weight: 0.5;
+    font-size: large;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+ }
