@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 hr {
     width: 50%;
     box-shadow: 5px 5px 5px lightgrey;
@@ -49,4 +51,139 @@ hr {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
+}
+
+.img {
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.container-img {
+    position: relative;
+    text-align: center;
+}
+
+  /* Top left text */
+.top-center-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.top-center-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    background-color: #E5303D;
+    color: white;
+    padding: 2px 5px 5px;
+    text-align: center;
+    border-radius: 50px;
+    border: #E5303D;
+    /* font-weight: bolder; */
+    width: 243px;
+    height: 58px;
+}
+
+.one-text-left {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 100px;
+    color: white;
+}
+
+.one-text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 100px;
+    color: white;
+}
+
+.one-text-right {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 100px;
+    color: white;
+}
+
+.heading {
+    letter-spacing: 7px;
+    font-size: 40px;
+}
+
+.header2 {
+    font-size: 44px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-header {
+    color: #7E92AC ;
+    font-size: 103x ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-center-text-yellow {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 64px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-center-text-purple {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 64px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-center-subtext-purple {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subsButton {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius: 5px;
+	background-color:#FEB301 ;
+	color: white;
+	padding: auto;
+    border-color: #FEB301;
+    height: 68px;
+    width: 200px;
+    font-size: 20px;
 }

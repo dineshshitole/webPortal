@@ -8,7 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductEnggComponent } from './product-engg/product-engg.component';
 import { RisingFoxComponent } from './rising-fox/rising-fox.component';
-
+import { ContactComponent } from './contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatButtonModule} from '@angular/material/button'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +19,15 @@ import { RisingFoxComponent } from './rising-fox/rising-fox.component';
     FooterComponent,
     AboutUsComponent,
     ProductEnggComponent,
-    RisingFoxComponent
+    RisingFoxComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
