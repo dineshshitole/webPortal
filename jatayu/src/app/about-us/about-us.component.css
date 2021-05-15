@@ -96,9 +96,19 @@ hr {
     height: 58px;
 }
 
+.one-icon-left {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* font-weight: 700; */
+    font-size: 100px;
+    color: white;
+}
+
 .one-text-left {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
     transform: translate(-50%, -50%);
     font-weight: 700;
@@ -106,9 +116,19 @@ hr {
     color: white;
 }
 
+.one-subtext-left {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* font-weight: 700; */
+    font-size: 30px;
+    color: white;
+}
+
 .one-text-center {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
@@ -116,13 +136,33 @@ hr {
     color: white;
 }
 
+.one-subtext-center {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* font-weight: 700; */
+    font-size: 30px;
+    color: white;
+}
+
 .one-text-right {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 10%;
     transform: translate(-50%, -50%);
     font-weight: 700;
     font-size: 100px;
+    color: white;
+}
+
+.one-subtext-right {
+    position: absolute;
+    top: 65%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    /* font-weight: 700; */
+    font-size: 30px;
     color: white;
 }
 
