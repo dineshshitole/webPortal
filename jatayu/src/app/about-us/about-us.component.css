@@ -258,31 +258,21 @@ hr {
 .center-text {
 	text-align: center
 }
-form.contact {
-	display: flex;
-	flex-direction: column;
-	max-width: 200px;
-	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-/* input,
-button {
-	margin-bottom: 10px;
-}
-button {
-	margin-top: 10px;
-	background-color: transparent;
-	color: black;
-	border: 1px solid black;
-	padding: 4px 16px;
-	transition: 0.4s;
-	width: 100%;
-	margin-top: 10px;
+
+.contactUsFormInputs {
+    width: 450px;
 }
 
-button:hover:enabled{
-	color: white;
-	background-color: black;
-} */
+.contactFormButton {
+    background-color: #FEB301 ;
+    border-color: #FEB301;
+    border-radius: 100px;
+}
+
+.modal-content {
+    content: “ ”;
+    background: inherit; 
+    position: absolute;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    background-color: white;
+}

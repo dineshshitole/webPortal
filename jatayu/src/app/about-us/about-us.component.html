@@ -108,16 +108,17 @@
 
 <div class="container fade-in">
   <p class="header2 text-center">Why Choose Us</p>
-  <p class="sub-header text-center">We provide best in class service, right from building a scalable website for your business<br> to making robust systems to suit your requirements</p>
+  <p class="sub-header text-center">We provide best in class service, right from building a scalable website for your
+    business<br> to making robust systems to suit your requirements</p>
   <div class="row justify-content-center below-heading">
     <div class="col-4">
       <img src="../../assets/images/s1.png" class="img" height="300px" width="300px">
     </div>
     <div class="col-4">
-      <img src="../../assets/images/s2.png" class="img"  height="300px" width="300px">
+      <img src="../../assets/images/s2.png" class="img" height="300px" width="300px">
     </div>
     <div class="col-4">
-      <img src="../../assets/images/s3.png" class="img"  height="300px" width="300px">
+      <img src="../../assets/images/s3.png" class="img" height="300px" width="300px">
     </div>
   </div>
 </div>
@@ -183,10 +184,10 @@
       <img src="../../assets/images/webdev.png" class="img" height="300px" width="300px">
     </div>
     <div class="col-4 top-center-text-below-yellow-center-img">
-      <img src="../../assets/images/iot.png" class="img"  height="300px" width="300px">
+      <img src="../../assets/images/iot.png" class="img" height="300px" width="300px">
     </div>
     <div class="col-4 top-center-text-below-yellow-right-img">
-      <img src="../../assets/images/da.png" class="img"  height="300px" width="300px">
+      <img src="../../assets/images/da.png" class="img" height="300px" width="300px">
     </div>
   </div>
 </div>
@@ -194,15 +195,15 @@
 <div class="container-img below-heading">
   <img src="../../assets/images/purple.png" height="550px" width="100%">
   <div class="top-center-text-purple">Ready To Get Started</div>
-  <div class="top-center-subtext-purple">We are excited about the opportunity to help you excel in your business by providing you with state of the art solutions</div>
-  <button class="subsButton" data-toggle="modal" data-target="#exampleModalCenter">GET IT NOW</button>
+  <div class="top-center-subtext-purple">We are excited about the opportunity to help you excel in your business by
+    providing you with state of the art solutions</div>
+  <button class="subsButton" data-toggle="modal" data-target="#exampleModal">GET IT NOW</button>
 </div>
 
-<div class="container">
-
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog " role="dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
@@ -211,36 +212,99 @@
         </button>
       </div>
       <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-      <div class="modal-body">
-     
-          <mat-form-field>
-            <mat-label>Name</mat-label>
-            <input matInput [formControl]="name" required>
-            <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Email</mat-label>
-            <input matInput [formControl]="email" placeholder="email@example.com" required>
-            <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Message</mat-label>
-            <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
-            <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
-            <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
-          </mat-form-field>
-          <input [formControl]="honeypot" class="hidden" type="text" />
-          <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-            <span>{{responseMessage}}</span>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="form-group">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput [formControl]="name" required>
+                <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput [formControl]="email" placeholder="email@example.com" required>
+                <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..."
+                  required></textarea>
+                <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
+                <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <input [formControl]="honeypot" class="hidden" type="text" />
+              <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+                <span>{{responseMessage}}</span>
+              </div>
+            </div>
           </div>
-       
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button [disabled]="isLoading"  type="submit" class="btn btn-primary">Save changes</button>
-      </div>
-    </form>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary formSunButton" data-dismiss="modal">Close</button>
+          </div>
+          <div class="col-6"></div>
+          <button [disabled]="isLoading" type="submit" class="btn btn-primary formSunButton">Save changes</button>
+        </div>
+      </form>
     </div>
   </div>
-</div>
-</div>
+</div> -->
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CONTACT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <mat-form-field appearance="outline" class="contactUsFormInputs">
+                <mat-label>Name</mat-label>
+                <input matInput [formControl]="name" required>
+                <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field appearance="outline" class="contactUsFormInputs">
+                <mat-label>Email</mat-label>
+                <input matInput [formControl]="email" placeholder="email@example.com" required>
+                <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field appearance="outline" class="contactUsFormInputs">
+                <mat-label>Message</mat-label>
+                <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..."
+                  required></textarea>
+                <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
+                <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <input [formControl]="honeypot" class="hidden" type="text" />
+              <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+                <span>{{responseMessage}}</span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button [disabled]="isLoading" type="submit"
+                class="btn btn-lg btn-block contactFormButton">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
